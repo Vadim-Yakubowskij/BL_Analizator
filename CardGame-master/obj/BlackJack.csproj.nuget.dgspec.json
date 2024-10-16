@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\BlackJack.csproj": {}
+    "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\BlackJack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\BlackJack.csproj": {
+    "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\BlackJack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\BlackJack.csproj",
+        "projectUniqueName": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\BlackJack.csproj",
         "projectName": "BlackJack",
-        "projectPath": "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\BlackJack.csproj",
-        "packagesPath": "C:\\Users\\Academy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\obj\\",
+        "projectPath": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\BlackJack.csproj",
+        "packagesPath": "C:\\Users\\wadim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Academy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wadim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CardGame.GameEngine;
+using CardGame.Strategy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,13 +14,15 @@ namespace CardGame
         {
             //BlackjackGame game = new BlackjackGame();
             //game.Start();
+            RandomDealerStrategy strategy = new RandomDealerStrategy();
+            Console.WriteLine(strategy.Select(18));
 
-            MonteCarloSelectStrategy monte = new MonteCarloSelectStrategy();
-            monte.engine = new BlackjackGame();
-            monte.engine.InitializeGame();
-            monte.strategy = new DefenciveDealerStrategy();
+            //MonteCarloSelectStrategy monte = new MonteCarloSelectStrategy();
+            //monte.engine = new BlackjackGame();
+            //monte.engine.InitializeGame();
+            //monte.strategy = new DefenciveDealerStrategy();
 
-            Console.WriteLine(monte.AnalizeMonteCarlo(18));
+            //Console.WriteLine(monte.AnalizeMonteCarlo(18));
         }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\BlackJack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\BlackJack.AssemblyInfoInputs.cache
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\BlackJack.AssemblyInfo.cs
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\BlackJack.csproj.CoreCompileInputs.cache
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\BlackJack.sourcelink.json
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\bin\Debug\net8.0\BlackJack.exe
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\bin\Debug\net8.0\BlackJack.deps.json
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\bin\Debug\net8.0\BlackJack.runtimeconfig.json
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\bin\Debug\net8.0\BlackJack.dll
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\bin\Debug\net8.0\BlackJack.pdb
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\BlackJack.dll
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\refint\BlackJack.dll
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\BlackJack.pdb
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\BlackJack.genruntimeconfig.cache
+C:\Users\wadim\Documents\GitHub\BL_Analizator\CardGame-master\obj\Debug\net8.0\ref\BlackJack.dll

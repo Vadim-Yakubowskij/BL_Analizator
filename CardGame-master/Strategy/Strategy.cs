@@ -29,7 +29,7 @@ namespace CardGame.Strategy
         public bool Select(int Score)
         {
             Random random = new Random();
-            return random.Next(0,1) % 2 == 0;
+            return random.Next(1,10) % 2 == 0;
         }
 
     }
@@ -108,7 +108,7 @@ public class MonteCarloSelectStrategy : ISelectionStrategy
             List<Card> deckCopy = new List<Card>();
             engine.ShuffleDeck();
             engine.Deck.ForEach(
-                x => deckCopy.Add(new Card(x.Suit, x.Rank)));
+                x => deckCopy.Add(new Card(x.Rank)));
             int dealerScore = 0;
 
             List<Card> dealerCards = new List<Card>();
