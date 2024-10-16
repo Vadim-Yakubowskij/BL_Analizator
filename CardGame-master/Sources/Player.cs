@@ -3,64 +3,62 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CardGame;
 
 
-namespace CardGame
+namespace CardGame.Sources
+{
+    public class Player
     {
-        public class Player
+        public string Name { get; }
+        public List<Card> Cards { get; }
+        public int Score => CalculateScore(Cards);
+
+        public Player(string name)
         {
-            public string Name { get; }
-            public List<Card> Cards { get; }
-            public int Score => CalculateScore(Cards);
+            Name = name;
+            Cards = new List<Card>();
+        }
 
-            public Player(string name)
+        public void AddCard(Card card)
+        {
+            Cards.Add(card);
+        }
+
+        public int CalculateScore(List<Card> cards)
+        {
+            int score = 0;
+            int aceCount = 0;
+
+            foreach (var card in cards)
             {
-                Name = name;
-                Cards = new List<Card>();
-            }
-
-            public void AddCard(Card card)
-            {
-                Cards.Add(card);
-            }
-
-            public int CalculateScore(List<Card> cards)
-            {
-                int score = 0;
-                int aceCount = 0;
-
-                foreach (var card in cards)
+                if (int.TryParse(card.Rank, out int cardValue))
                 {
-                    if (int.TryParse(card.Rank, out int cardValue))
-                    {
-                        score += cardValue;
-                    }
-                    else if (card.Rank == "A")
-                    {
-                        score += 11;
-                        aceCount++;
-                    }
-                    else
-                    {
-                        score += 10; // J, Q, K
-                    }
+                    score += cardValue;
                 }
-
-                while (score > 21 && aceCount > 0)
+                else if (card.Rank == "A")
                 {
-                    score -= 10; // Adjust for Aces
-                    aceCount--;
+                    score += 11;
+                    aceCount++;
                 }
-
-                return score;
+                else
+                {
+                    score += 10; // J, Q, K
+                }
             }
 
-            public override string ToString()
+            while (score > 21 && aceCount > 0)
             {
-                return string.Join(", ", Cards);
+                score -= 10; // Adjust for Aces
+                aceCount--;
             }
+
+            return score;
+        }
+
+        public override string ToString()
+        {
+            return string.Join(", ", Cards);
         }
     }
+}
 
-    

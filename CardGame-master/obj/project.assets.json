@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\CardGame.csproj",
-      "projectName": "CardGame",
-      "projectPath": "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\CardGame.csproj",
+      "projectUniqueName": "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\BlackJack.csproj",
+      "projectName": "BlackJack",
+      "projectPath": "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\BlackJack.csproj",
       "packagesPath": "C:\\Users\\Academy\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Academy\\Downloads\\CardGame-master\\CardGame-master\\obj\\",
       "projectStyle": "PackageReference",

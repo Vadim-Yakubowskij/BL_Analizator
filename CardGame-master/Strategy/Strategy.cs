@@ -1,11 +1,13 @@
-﻿using CardGame;
+﻿using CardGame.GameEngine;
+using CardGame.Sources;
+using CardGame.Strategy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CardGame
+namespace CardGame.Strategy
 {
 
     public interface ISelectionStrategy
@@ -14,7 +16,9 @@ namespace CardGame
         string Print();
     }
 
-
+    /// <summary>
+    /// Стратегия для рандомной игры дилера
+    /// </summary>
     public class RandomDealerStrategy : ISelectionStrategy
     {
         public string Print()
@@ -25,13 +29,14 @@ namespace CardGame
         public bool Select(int Score)
         {
             Random random = new Random();
-            return random.Next(1, 10) % 2 == 0;
-
+            return random.Next(0,1) % 2 == 0;
         }
 
     }
 
-
+    /// <summary>
+    /// Стратегия при которой дилер играет максимально осторожно
+    /// </summary>
     public class DefenciveDealerStrategy : ISelectionStrategy
     {
         public string Print()
@@ -44,7 +49,7 @@ namespace CardGame
 
             Console.WriteLine("Dealer's Turn:");
 
-            while (Score < 15)
+            while (Score < 14)
             {
                 //Console.WriteLine("Decision: Not draw a card");
                 return true;
@@ -53,7 +58,9 @@ namespace CardGame
 
         }
     }
-
+    /// <summary>
+    /// Стратегия при которой дилер играет максимально агрессивно
+    /// </summary>
     public class AgressiveDealerStrategy : ISelectionStrategy
     {
 
@@ -65,7 +72,7 @@ namespace CardGame
         public bool Select(int Score)
         {
 
-            while (Score < 17)
+            while (Score < 18)
             {
 
                 //Console.WriteLine("Decision: Draw a card");
@@ -75,7 +82,9 @@ namespace CardGame
         }
     }
 }
-
+/// <summary>
+/// Стратегия монте-карло для дилера
+/// </summary>
 public class MonteCarloSelectStrategy : ISelectionStrategy
 {
     public ISelectionStrategy strategy;
@@ -87,7 +96,7 @@ public class MonteCarloSelectStrategy : ISelectionStrategy
 
     public int AnalizeMonteCarlo(int score)
     {
-       
+
         int numberOfIterations = 10000;
 
         int monteCarloWins = 0;
@@ -118,7 +127,7 @@ public class MonteCarloSelectStrategy : ISelectionStrategy
             {
                 monteCarloWins++;
             }
-            
+
         }
 
         return monteCarloWins;
