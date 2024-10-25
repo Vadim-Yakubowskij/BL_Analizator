@@ -1,4 +1,5 @@
 ﻿using CardGame.Sources;
+using CardGame.Strategy;
 using System;
 using System.Collections.Generic;
 using System.Numerics;
@@ -14,14 +15,26 @@ namespace CardGame.GameEngine
         private List<Card> deck; //список  для хранения колоды карт
         private Player player;
         private Player dealer;// 2 класса для игрока и дилера
+        private ISelectionStrategy playerStrategy;
+        private ISelectionStrategy dealerStrategy;
+        public bool PlayerWins;
 
         public List<Card> Deck { get => deck; set => deck = value; }
 
-        public void Start()
+        public void Start(ISelectionStrategy playerStrategy, ISelectionStrategy dealerStrategy)
         {
             InitializeGame();
-
             DealCards();
+
+            this.dealerStrategy = dealerStrategy;
+
+            this.playerStrategy = playerStrategy;
+            if (playerStrategy is MonteCarloSelectStrategy)
+            {
+                MonteCarloSelectStrategy monteCarloSelectStrategy = (playerStrategy as MonteCarloSelectStrategy);
+                monteCarloSelectStrategy.strategy = this.dealerStrategy;
+                monteCarloSelectStrategy.engine = this;
+            }
 
             PlayerTurn();
             if (player.Score > WinScore) return;
@@ -46,15 +59,16 @@ namespace CardGame.GameEngine
         public List<Card> CreateDeck()
         {
             List<Card> deck = new List<Card>();
-            
-            string[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A","2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A","2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
+            string[] suits = { "Hearts", "Diamonds", "Clubs", "Spades" };
+            string[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
 
-
-            foreach (var rank in ranks)
+            foreach (var suit in suits)
             {
-                deck.Add(new Card(rank));
+                foreach (var rank in ranks)
+                {
+                    deck.Add(new Card(suit, rank));
+                }
             }
-  
 
             return deck;
         }
@@ -86,8 +100,8 @@ namespace CardGame.GameEngine
                 dealer.AddCard(DrawCard());
             }
 
-            Console.WriteLine($"{player.Name}'s Cards: {player}");
-            Console.WriteLine($"Dealer's Showing Card: {dealer.Cards[0]}");
+            //Console.WriteLine($"{player.Name}'s Cards: {player}");
+            //Console.WriteLine($"Dealer's Showing Card: {dealer.Cards[0]}");
         }
 
         public Card DrawCard() // берет первую карту из колоды (индекс 0) и убирает её из колоды, возвращая её.
@@ -101,13 +115,9 @@ namespace CardGame.GameEngine
         {
             while (player.Score < WinScore)
             {
-                Console.WriteLine($"Current Score: {player.Score}");
-                Console.Write("Do you want to hit (h) or stand (s)? ");
-                string choice = Console.ReadLine();
-                if (choice.ToLower() == "h")
+                if (playerStrategy.Select(player.Score))
                 {
                     player.AddCard(DrawCard());
-                    Console.WriteLine($"{player.Name} draws: {player.Cards[^1]}");
                 }
                 else
                 {
@@ -115,7 +125,7 @@ namespace CardGame.GameEngine
                 }
             }
 
-            Console.WriteLine($"{player.Name}'s Final Score: {player.Score}");
+            //Console.WriteLine($"{player.Name}'s Final Score: {player.Score}");
         }
         public int CalculateScore(List<Card> cards)
         {
@@ -149,27 +159,26 @@ namespace CardGame.GameEngine
         }
         private void DealerTurn()
         {
-            while (dealer.Score < 17)
+            while (dealerStrategy.Select(dealer.Score))
             {
                 dealer.AddCard(DrawCard());
-                Console.WriteLine($"{dealer.Name} draws: {dealer.Cards[^1]}");
             }
 
-            Console.WriteLine($"{dealer.Name}'s Final Score: {dealer.Score}");
+            //Console.WriteLine($"{dealer.Name}'s Final Score: {dealer.Score}");
         }
 
         private void DetermineWin()
         {
             if (player.Score > WinScore)
-                Console.WriteLine("Player busts! Dealer wins!");
+                PlayerWins = false;
             else if (dealer.Score > WinScore)
-                Console.WriteLine("Dealer busts! Player wins!");
+                PlayerWins = true;
             else if (player.Score > dealer.Score)
-                Console.WriteLine("Player wins!");
+                PlayerWins = true;
             else if (dealer.Score > player.Score)
-                Console.WriteLine("Dealer wins!");
+                PlayerWins = false;
             else
-                Console.WriteLine("It's a tie!");
+                PlayerWins = true;
         }
     }
 }

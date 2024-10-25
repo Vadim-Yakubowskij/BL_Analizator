@@ -12,17 +12,16 @@ namespace CardGame
     {
         static void Main()
         {
-            //BlackjackGame game = new BlackjackGame();
-            //game.Start();
-            RandomDealerStrategy strategy = new RandomDealerStrategy();
-            Console.WriteLine(strategy.Select(18));
-
-            //MonteCarloSelectStrategy monte = new MonteCarloSelectStrategy();
-            //monte.engine = new BlackjackGame();
-            //monte.engine.InitializeGame();
-            //monte.strategy = new DefenciveDealerStrategy();
-
-            //Console.WriteLine(monte.AnalizeMonteCarlo(18));
+            const int ITERATIONS_COUNT = 1000;
+            int playerWins = 0;
+            Parallel.For(0, ITERATIONS_COUNT, (i) =>
+            {
+                /*Console.WriteLine($"game {i + 1} first wins:{playerWins}");*/
+                BlackjackGame game = new BlackjackGame();
+                game.Start(new MonteCarloSelectStrategy(), new DealerStrategy());
+                playerWins += Convert.ToInt32(game.PlayerWins);
+            });
+            Console.WriteLine($"{((double)playerWins / ITERATIONS_COUNT) * 100} %");
         }
     }
 }
