@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\strategy\\strategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:strategy\\strategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\helper\\randomhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:helper\\randomhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\gameengine\\blackjackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:gameengine\\blackjackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\sources\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:sources\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\blackjack.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:blackjack.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\sources\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:sources\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\helper\\randomhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:helper\\randomhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\sources\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:sources\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\strategy\\strategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:strategy\\strategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|c:\\users\\wadim\\documents\\github\\bl_analizator\\cardgame-master\\blackjack.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FBC2746F-028B-43FD-8E75-FCB244B76D44}|BlackJack.csproj|solutionrelative:blackjack.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T17:49:15.953Z",
               "EditorCaption": ""
@@ -61,27 +61,27 @@
               "RelativeDocumentMoniker": "GameEngine\\BlackjackGame.cs",
               "ToolTip": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\GameEngine\\BlackjackGame.cs",
               "RelativeToolTip": "GameEngine\\BlackjackGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T17:48:55.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\Sources\\Card.cs",
               "RelativeDocumentMoniker": "Sources\\Card.cs",
               "ToolTip": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\Sources\\Card.cs",
               "RelativeToolTip": "Sources\\Card.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T17:48:56.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\Sources\\Player.cs",
               "RelativeDocumentMoniker": "Sources\\Player.cs",
@@ -89,11 +89,12 @@
               "RelativeToolTip": "Sources\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T17:49:17.16Z"
+              "WhenOpened": "2024-10-16T17:49:17.16Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BlackJack",
               "DocumentMoniker": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\BlackJack.csproj",
               "RelativeDocumentMoniker": "BlackJack.csproj",
@@ -104,19 +105,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "RandomHelper.cs",
               "DocumentMoniker": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\Helper\\RandomHelper.cs",
               "RelativeDocumentMoniker": "Helper\\RandomHelper.cs",
               "ToolTip": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\Helper\\RandomHelper.cs",
               "RelativeToolTip": "Helper\\RandomHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T17:49:14.936Z"
+              "WhenOpened": "2024-10-16T17:49:14.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Strategy.cs",
               "DocumentMoniker": "C:\\Users\\wadim\\Documents\\GitHub\\BL_Analizator\\CardGame-master\\Strategy\\Strategy.cs",
               "RelativeDocumentMoniker": "Strategy\\Strategy.cs",
@@ -124,8 +126,7 @@
               "RelativeToolTip": "Strategy\\Strategy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T17:49:09.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T17:49:09.285Z"
             }
           ]
         }
